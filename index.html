@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karenn & Marcos Felipe</title>
+
+
+<style>
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background:#f5f5f5;
+  color:#333;
+  text-align:center;
+}
+
+/* HEADER */
+header{
+  background:#ffffff;
+  padding:15px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+  font-size:14px;
+}
+
+/* HERO */
+.hero{
+  background: url("capa.jpeg") center/cover no-repeat;
+  color: white;
+  padding: 160px 20px;
+}
+
+.hero h1{
+  font-size:42px;
+  margin:0;
+}
+
+.date{
+  font-size:18px;
+  margin-top:10px;
+}
+
+/* SECTIONS */
+section{
+  background:white;
+  margin:20px 15px;
+  padding:30px 20px;
+  max-width:1100px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2{
+  margin-bottom:20px;
+  color:#b48a5a;
+  font-size:24px;
+}
+
+/* PRESENTES */
+.gifts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+}
+
+.gift-card{
+  background:#fafafa;
+  border-radius:12px;
+  padding:15px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.gift-card img{
+ width:100%;
+  aspect-ratio: 1 / 1;   /* deixa todas quadradas */
+  object-fit: cover;
+  border-radius:8px;
+}
+
+.gift-title{
+  margin:12px 0 5px;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.price{
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+button{
+  background:#a39b5d;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  width:100%;
+  font-size:14px;
+}
+
+button:hover{
+  background:#8c844d;
+}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:#222;
+  color:white;
+  font-size:14px;
+}
+
+/* 🔥 RESPONSIVO EXTRA PARA CELULAR */
+@media (max-width: 600px){
+
+  .hero{
+    padding:120px 20px;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .date{
+    font-size:16px;
+  }
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav a{
+    padding:5px 0;
+  }
+
+  .map-container{
+  width:100%;
+  margin-top:20px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.map-container iframe{
+  width:100%;
+  height:350px;
+  border:0;
+}
+
+.map-container{
+  width:100%;
+  margin-top:20px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.map-container img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+.foto-casal{
+  width:100%;
+  max-width:400px;   /* limita o tamanho no desktop */
+  height:auto;
+  margin-top:20px;
+  border-radius:12px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.foto-casal{
+  max-width:280px;
+}
+
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#casal">O Casal</a>
+  <a href="#presentes">Lista de Presentes</a>
+  <a href="#cerimonia">Cerimônia</a>
+
+</nav>
+</header>
+
+<div class="hero" id="home">
+
+</div>
+
+<!-- CONTAGEM REGRESSIVA
+<div class="countdown-section">
+  <div class="countdown-title">Contagem Regressiva</div>
+
+  <div class="countdown-boxes">
+    <div class="box">
+      <div class="number" id="days">00</div>
+      <div class="label">DIAS</div>
+    </div>
+
+    <div class="box">
+      <div class="number" id="hours">00</div>
+      <div class="label">HORAS</div>
+    </div>
+
+    <div class="box">
+      <div class="number" id="minutes">00</div>
+      <div class="label">MINUTOS</div>
+    </div>
+
+    <div class="box">
+      <div class="number" id="seconds">00</div>
+      <div class="label">SEGUNDOS</div>
+    </div>
+  </div>
+</div>  -->
+
+<section id="casal">
+<h2>Queridos amigo(a)</h2>
+<p>
+Queridos,
+está chegando o dia em que o
+Senhor confiou ao nosso amor a
+missão de caminharmos juntos e
+sermos um só, unidos pelo
+Sacramento do Matrimônio, sob sua
+graça e bênção.
+E nada faria mais sentido do que
+viver esse dia ao lado de quem faz
+parte da nossa história.
+Que vocês registrem cada sorriso, cada
+abraço e cada detalhe que torna esse
+momento único. 
+Estamos ansiosos para receber vocês
+e compartilhar essa celebração. 
+</p>
+<img src="essa mesmo.png" class="foto-casal">
+</section>
+
+<section id="presentes">
+<h2>Lista de Presentes</h2>
+
+<div class="gifts">
+
+  <div class="gift-card">
+    <img src="mimo.jpeg">
+    <div class="gift-title">Mimo</div>
+    <div class="price">R$ 52,62</div>
+    <button onclick="window.location.href='https://mpago.la/1nuaLzQ'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="airfry.jpeg">
+    <div class="gift-title">Air Fryer</div>
+    <div class="price">R$ 527,24</div>
+    <button onclick="window.location.href='https://mpago.la/2JYhmGc'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="coifa.jpeg">
+    <div class="gift-title">Coifa</div>
+    <div class="price">R$ 613,51</div>
+    <button onclick="window.location.href='https://mpago.la/24i9htm'">
+  Presentear
+</button>
+  </div>
+  
+  <div class="gift-card">
+    <img src="lava.jpeg">
+    <div class="gift-title">Lava-Louças</div>
+    <div class="price">R$ 5.038,94</div>
+    <button onclick="window.location.href='https://mpago.la/2SBxoxJ'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="cooktop.jpeg">
+    <div class="gift-title">Cooktop</div>
+    <div class="price">R$ 625,68</div>
+    <button onclick="window.location.href='https://mpago.la/1n5C8Xw'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="maquina .jpeg">
+    <div class="gift-title">Maquina lava e seca</div>
+    <div class="price">R$ 3.589,37</div>
+    <button onclick="window.location.href='https://mpago.la/1gbyStB'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="micro.jpeg">
+    <div class="gift-title">Microondas</div>
+    <div class="price">R$ 686,11</div>
+    <button onclick="window.location.href='https://mpago.la/2dpFiQs'">
+  Presentear
+</button>
+  </div>
+
+  <div class="gift-card">
+    <img src="geladeira.jpeg">
+    <div class="gift-title">Geladeira Side by Electrolux</div>
+    <div class="price">R$ 4.723,05</div>
+    <button onclick="window.location.href=' https://mpago.la/13PgyTC'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="chaleira.jpeg">
+    <div class="gift-title">Chaleira</div>
+    <div class="price">R$ 152,22</div>
+    <button onclick="window.location.href='https://mpago.la/1jeAm6L'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="torradeira.jpeg">
+    <div class="gift-title">Torradeira Eletrica</div>
+    <div class="price">R$ 167,86</div>
+    <button onclick="window.location.href='https://mpago.la/2JoN435'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="cortador.jpeg">
+    <div class="gift-title">Mandolin cortador de legumes</div>
+    <div class="price">R$ 193,16</div>
+    <button onclick="window.location.href=' https://mpago.la/1NaUMF7'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="Potes.jpeg">
+    <div class="gift-title">Potes Hermeticos</div>
+    <div class="price">R$ 93,43</div>
+    <button onclick="window.location.href=' https://mpago.la/1uurZZN'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="Porta.jpeg">
+    <div class="gift-title">Porta-mantimentos</div>
+    <div class="price">R$ 104,88</div>
+    <button onclick="window.location.href='https://mpago.la/2uyZ4VG'">
+  Presentear
+</button>
+  </div>
+
+    <div class="gift-card">
+    <img src="Conjunto.jpeg">
+    <div class="gift-title">Conjunto Bowls</div>
+    <div class="price">R$ 115,37</div>
+    <button onclick="window.location.href='https://mpago.la/15t9tMg'">
+  Presentear
+</button>
+  </div>
+
+      <div class="gift-card">
+    <img src="Purificador.jpeg">
+    <div class="gift-title">Purificador de água</div>
+    <div class="price">R$ 497,66</div>
+    <button onclick="window.location.href='https://mpago.la/1BBH2SK'">
+  Presentear
+</button>
+  </div>
+
+      <div class="gift-card">
+    <img src="Armário.jpeg">
+    <div class="gift-title">Ar Condicionado</div>
+    <div class="price">R$ 2.088,47</div>
+    <button onclick="window.location.href='https://mpago.la/2wQRZJp'">
+  Presentear
+</button>
+  </div>
+
+      <div class="gift-card">
+    <img src="Sofa.jpeg">
+    <div class="gift-title">Sofá Reclinável</div>
+    <div class="price">R$ 1.879,49</div>
+    <button onclick="window.location.href='https://mpago.la/1fU8Kqw'">
+  Presentear
+</button>
+  </div>
+
+      <div class="gift-card">
+    <img src="Liquidificador .jpeg">
+    <div class="gift-title">Liquidificador </div>
+    <div class="price">R$ 104,88</div>
+    <button onclick="window.location.href='https://mpago.la/15ddpdj'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="Multiprocessador.jpeg">
+    <div class="gift-title">Multiprocessador</div>
+    <div class="price">R$ 328,11</div>
+    <button onclick="window.location.href='https://mpago.la/1EFFUSr'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="Armário.jpeg">
+    <div class="gift-title">Armário Suspenso</div>
+    <div class="price">R$ 413,58</div>
+    <button onclick="window.location.href='https://mpago.la/2AnVFFT'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="Batedeira.jpeg">
+    <div class="gift-title">Batedeira</div>
+    <div class="price">R$ 89,65</div>
+    <button onclick="window.location.href='https://mpago.la/1sZVPYY'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="TV50.jpeg">
+    <div class="gift-title">TV 50"</div>
+    <div class="price">R$ 2.086,51</div>
+    <button onclick="window.location.href='https://mpago.la/1ah49rM'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="Contribuição.jpeg">
+    <div class="gift-title">Contribuição em dinheiro</div>
+    <div class="price">R$ 100,07</div>
+    <button onclick="window.location.href='https://mpago.la/19NJgsD'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="cachoeira.jpeg">
+    <div class="gift-title">Explorar o paraíso das cachoeiras</div>
+    <div class="price">R$ 314,94</div>
+    <button onclick="window.location.href='https://mpago.la/28AZcuZ'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="acarajé.jpeg">
+    <div class="gift-title">Comer acarajé no centro</div>
+    <div class="price">R$ 129,71</div>
+    <button onclick="window.location.href='https://mpago.la/22bxaPV'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="chop.jpeg">
+    <div class="gift-title">Chopp no barzinho</div>
+    <div class="price">R$ 156,34</div>
+    <button onclick="window.location.href='https://mpago.la/1ijUjSz'">
+  Presentear
+</button>
+  </div>
+
+        <div class="gift-card">
+    <img src="champagne.jpeg">
+    <div class="gift-title">Champagne da noite de núpcias</div>
+    <div class="price">R$ 262,45</div>
+    <button onclick="window.location.href='https://mpago.la/1nPhkct'">
+  Presentear
+</button>
+  </div>
+
+          <div class="gift-card">
+    <img src="açai.jpeg">
+    <div class="gift-title">Comer açaí a tarde</div>
+    <div class="price">R$ 93,38</div>
+    <button onclick="window.location.href='https://mpago.la/1XM5Ah2'">
+  Presentear
+</button>
+  </div>
+
+</div>
+</section>
+
+<section id="cerimonia">
+  <h2>LOCAL DA CERIMÔNIA</h2>
+  <p>Paróquia Universitária São João Evangelista</p>
+  <p>
+    Praça Universitária c/ 1ª Avenida Qd.85 Lt.43 - Setor Leste Universitário, Goiânia - GO, 74606-220
+  </p>
+
+  <div class="map-container">
+     <img src="igreja.jpeg">
+  </div>
+
+  <br>
+
+  <a href="https://maps.app.goo.gl/P8ifUJtjtYovDtYe7" target="_blank">
+    <button>Como Chegar</button>
+  </a>
+</section>
+
+<footer>
+© 2026 • Karenn & Marcos Felipe
+</footer>
+
+<script>
+const weddingDate = new Date("Apr 18, 2026 13:30:00").getTime();
+
+setInterval(() => {
+
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+
+  const days = Math.floor(diff / (1000*60*60*24));
+  const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+  const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+  const seconds = Math.floor((diff % (1000*60)) / 1000);
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+</script>
+
+</body>
+</html>
